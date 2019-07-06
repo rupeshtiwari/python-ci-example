@@ -204,3 +204,16 @@ jobs:
 ```
 
 ![circle ci folder structure](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/circle-ci-folder-structure.PNG)
+
+![circle ci website build success]()
+
+## 📗 Step 6. Make Changes
+
+`src\test_calculator.py`
+
+```py
+    def test_i_can_multipy_numbers(self):
+        assert 20 == calculator.multiply(4, 5)
+```
+
+![multiply failing test]()
