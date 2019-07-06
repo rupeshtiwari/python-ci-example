@@ -237,7 +237,7 @@ def multiply(first_num, second_num):
 
 ![multiply passing test on circle-ci](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/multiply-test-passing-oncircleci.PNG)
 
-## 📗 Step 8. Running Test in Watch
+## 📗 Step 8. Running Test in Watch ( Continuos Testing)
 
 Run Below script to install `pytest-watch`
 
@@ -245,6 +245,8 @@ Run Below script to install `pytest-watch`
 pip install pytest-watch
 ```
 
-![Running Test in Watch]()
+![pytest in watch](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/running-test-in-watchmode.PNG)
 
-![Running Test in Watch mode and passing]()
+![Running Test in Watch](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-running-while-code-changing.PNG)
+
+![Running Test in Watch mode and passing](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-running-while-code-changing-pass.PNG)
