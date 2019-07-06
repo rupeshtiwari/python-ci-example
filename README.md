@@ -236,3 +236,15 @@ def multiply(first_num, second_num):
 ![multiply passing test locally](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-passing-multiply-locally.PNG)
 
 ![multiply passing test on circle-ci](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/multiply-test-passing-oncircleci.PNG)
+
+## 📗 Step 8. Running Test in Watch
+
+Run Below script to install `pytest-watch`
+
+```sh
+pip install pytest-watch
+```
+
+![Running Test in Watch]()
+
+![Running Test in Watch mode and passing]()
