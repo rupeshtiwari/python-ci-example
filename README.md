@@ -55,3 +55,24 @@ Identify `activate.bat` file and run it.
 
 ![activate bat file](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/activating-env-locally.PNG)
 
+## 📗 Step 4. Preparing for Unit Tests
+
+💡 For Test Driven Development we need Tests.
+Also in order to secure our code from other devlopers such that they dont break the functionality we need to run test for entire project everytime we check-in code in to source repository.
+
+👉 **Step 1. Install Unit Testing & Test Coverage Python Modules**
+Run Below Script to install `flake8` , `pytest`, and `pytest-cov`.
+
+```sh
+pip install flake8 pytest pytest-cov
+```
+
+![Install Unit Testing & Test Coverage Python Modules]()
+
+👉 **Step 2. Store external Dependencies in a Requirement.txt file**
+
+```sh
+pip freeze > requirements.txt
+```
+
+![Requirements file]()
