@@ -2,6 +2,10 @@
 
 Welcome to Python Continuos Integration on Windows Machine
 
+## Essential Python Extensions for VSCode
+
+![Python Extensions in VSCode]()
+
 ## 📗 Step 1. Environment Setup
 
 👉 **Step 1. Install Python at your local box**
@@ -76,3 +80,81 @@ pip freeze > requirements.txt
 ```
 
 ![Requirements file]()
+
+## 📗 Writing Unit Test
+
+👉 **Step 1. Creating Failing Test First**
+
+Crate Test for Calculator
+
+`src\test_calculator.py`
+
+```py
+"""
+Unit Tests for the Calculator
+"""
+
+class TestCalculator:
+    def test_i_can_add_numbers(self):
+        assert 4 == calculator.add(2, 2)
+
+    def test_i_can_subtract_numbers(self):
+        assert 3 == calculator.subtract(5, 2)
+
+```
+
+Run below script to run test
+
+`pytest -v`
+
+![RunningFailingTEst]()
+
+👉 **Step 2. Pass the Failing Test by Writing Production Code Required to Just Pass the Test**
+
+`src\calculator.py`
+
+```py
+"""
+Calculator Module
+"""
+
+
+def add(first_num, second_num):
+    return first_num + second_num
+
+
+def subtract(first_num, second_num):
+    return first_num - second_num
+
+```
+
+`src\test_calculator.py`
+
+```py
+"""
+Unit Tests for the Calculator
+"""
+
+import calculator
+
+
+class TestCalculator:
+    def test_i_can_add_numbers(self):
+        assert 4 == calculator.add(2, 2)
+
+    def test_i_can_subtract_numbers(self):
+        assert 3 == calculator.subtract(5, 2)
+
+```
+
+👉 **Step 3. Run Test Again**
+
+Run below script to run test
+
+`pytest -v`
+
+![passing test]()
+
+**Folder Structure of the code base**
+
+![Code Base Folder Src]()
