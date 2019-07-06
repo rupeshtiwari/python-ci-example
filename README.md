@@ -264,3 +264,11 @@ pip freeze > requirements.txt
 ```
 
 ![New Requirements File]()
+
+💡 How to install packages using pip according to the requirements.txt file from a local directory.
+
+**Run Below Script**
+
+```sh
+pip install -r requirements.txt
+```
