@@ -111,8 +111,6 @@ Run below script to run test
 
 ![RunningFailingTEst](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/running-failing-test.PNG)
 
-![failing test](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-failing.PNG)
-
 👉 **Step 2. Pass the Failing Test by Writing Production Code Required to Just Pass the Test**
 
 `src\calculator.py`
