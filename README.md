@@ -205,9 +205,9 @@ jobs:
 
 ![circle ci folder structure](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/circle-ci-folder-structure.PNG)
 
-![circle ci website build success]()
+![circle ci website build success](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/build-success-incircleci.PNG)
 
-## 📗 Step 6. Make Changes
+## 📗 Step 7. Make Changes
 
 👉 **Step 1. Add Multiply Test**
 `src\test_calculator.py`
@@ -217,11 +217,11 @@ jobs:
         assert 20 == calculator.multiply(4, 5)
 ```
 
-![multiply failing test locally]()
+![multiply failing test locally](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/failing-multiply-test.PNG)
 
 Try Check-in your code and you will see error on circle ci website
 
-![multiply failing test build machine]()
+![multiply failing test build machine](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/circle-ci-multiplication-failed.PNG)
 
 👉 **Step 2. Fix Multiply Test**
 
@@ -233,6 +233,6 @@ def multiply(first_num, second_num):
 
 ```
 
-![multiply passing test locally]()
+![multiply passing test locally](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-passing-multiply-locally.PNG)
 
-![multiply passing test on circle-ci]()
+![multiply passing test on circle-ci](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/multiply-test-passing-oncircleci.PNG)
