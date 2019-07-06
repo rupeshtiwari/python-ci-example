@@ -158,3 +158,11 @@ Run below script to run test
 **Folder Structure of the code base**
 
 ![Code Base Folder Src]()
+
+**Run Below Script to See the code coverage**
+
+```sh
+pytest -v --cov
+```
+
+![code coverage]()
