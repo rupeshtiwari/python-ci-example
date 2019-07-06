@@ -1,4 +1,4 @@
-# python-ci-example
+# Continuous Integration With Python: An Introduction
 
 Welcome to Python Continuos Integration on Windows Machine
 
@@ -81,7 +81,7 @@ pip freeze > requirements.txt
 
 ![Requirements file]()
 
-## 📗 Writing Unit Test
+## 📗 Step 5. Writing Unit Test
 
 👉 **Step 1. Creating Failing Test First**
 
@@ -166,3 +166,37 @@ pytest -v --cov
 ```
 
 ![code coverage]()
+
+## 📗 Step 6. Connect to CircleCI
+
+👉 **Step 1. Create the .circleci folder inside your repository**
+👉 **Step 2. Create config.yml file with below content**
+
+```yml
+# Python CircleCI 2.0 configuration file
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7
+
+    working_directory: ~/repo
+
+    steps:
+      # Step 1: obtain repo from GitHub
+      - checkout
+      # Step 2: create virtual env and install dependencies
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
+      # Step 3: run linter and tests
+      - run:
+          name: run tests
+          command: |
+            . venv/bin/activate
+            flake8 --exclude=venv* --statistics
+            pytest -v --cov=calculator
+```
