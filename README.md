@@ -250,3 +250,17 @@ pip install pytest-watch
 ![Running Test in Watch](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-running-while-code-changing.PNG)
 
 ![Running Test in Watch mode and passing](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-running-while-code-changing-pass.PNG)
+
+## 📗 Step 9. Updating Requirements.txt File
+
+👉 **Step 1. Delete old Requirements.txt File**
+
+👉 **Step 2. Create New Requirements.txt File**
+
+Run Script
+
+```sh
+pip freeze > requirements.txt
+```
+
+![New Requirements File]()
