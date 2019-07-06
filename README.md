@@ -71,7 +71,7 @@ Run Below Script to install `flake8` , `pytest`, and `pytest-cov`.
 pip install flake8 pytest pytest-cov
 ```
 
-![Install Unit Testing & Test Coverage Python Modules]()
+![Install Unit Testing & Test Coverage Python Modules](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/installing-unit-test-pckgs.PNG)
 
 👉 **Step 2. Store external Dependencies in a Requirement.txt file**
 
@@ -79,7 +79,9 @@ pip install flake8 pytest pytest-cov
 pip freeze > requirements.txt
 ```
 
-![Requirements file]()
+![Requirements file freeze](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/freeze%20requirements.PNG)
+
+![Requirements file](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/requirements%20-file.PNG)
 
 ## 📗 Step 5. Writing Unit Test
 
@@ -107,7 +109,9 @@ Run below script to run test
 
 `pytest -v`
 
-![RunningFailingTEst]()
+![RunningFailingTEst](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/running-failing-test.PNG)
+
+![failing test](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/test-failing.PNG)
 
 👉 **Step 2. Pass the Failing Test by Writing Production Code Required to Just Pass the Test**
 
@@ -153,11 +157,11 @@ Run below script to run test
 
 `pytest -v`
 
-![passing test]()
+![passing test](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/passing-test.PNG)
 
 **Folder Structure of the code base**
 
-![Code Base Folder Src]()
+![Code Base Folder Src](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/folder-structure.PNG)
 
 **Run Below Script to See the code coverage**
 
@@ -165,7 +169,7 @@ Run below script to run test
 pytest -v --cov
 ```
 
-![code coverage]()
+![code coverage](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/code-coverage.PNG)
 
 ## 📗 Step 6. Connect to CircleCI
 
@@ -200,3 +204,5 @@ jobs:
             flake8 --exclude=venv* --statistics
             pytest -v --cov=calculator
 ```
+
+![circle ci folder structure](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/circle-ci-folder-structure.PNG)
