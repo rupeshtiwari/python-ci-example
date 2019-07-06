@@ -4,7 +4,7 @@ Welcome to Python Continuos Integration on Windows Machine
 
 ## Essential Python Extensions for VSCode
 
-![Python Extensions in VSCode]()
+![Python Extensions in VSCode](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/python-extensions-in-vscode.PNG)
 
 ## 📗 Step 1. Environment Setup
 
