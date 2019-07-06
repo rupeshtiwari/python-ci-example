@@ -209,6 +209,7 @@ jobs:
 
 ## 📗 Step 6. Make Changes
 
+👉 **Step 1. Add Multiply Test**
 `src\test_calculator.py`
 
 ```py
@@ -216,4 +217,20 @@ jobs:
         assert 20 == calculator.multiply(4, 5)
 ```
 
-![multiply failing test]()
+![multiply failing test locally]()
+
+Try Check-in your code and you will see error on circle ci website
+
+![multiply failing test build machine]()
+
+👉 **Step 2. Fix Multiply Test**
+
+`src\calculator.py`
+
+```py
+def multiply(first_num, second_num):
+    return first_num * second_num
+
+```
+
+![multiply passing test locally]()
