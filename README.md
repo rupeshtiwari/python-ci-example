@@ -263,7 +263,7 @@ Run Script
 pip freeze > requirements.txt
 ```
 
-![New Requirements File]()
+![New Requirements File](https://github.com/rupeshtiwari/python-ci-example/blob/master/docs/updating-requirements.txt)
 
 💡 How to install packages using pip according to the requirements.txt file from a local directory.
 
@@ -272,3 +272,4 @@ pip freeze > requirements.txt
 ```sh
 pip install -r requirements.txt
 ```
+
